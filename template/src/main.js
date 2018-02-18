@@ -4,18 +4,25 @@
 {{/if_eq}}
 import Vue from 'vue'
 import App from './App'
-{{#router}}
 import router from './router'
-{{/router}}
+import store from './store'
+import Api from './api'
+import ElementUI from 'element-ui'
+
+import 'element-ui/lib/theme-chalk/index.css'
+import 'font-awesome/css/font-awesome.min.css'
+import './common/stylus/common.styl'
+
+Vue.use(ElementUI)
+Vue.prototype.$api = Api
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  {{#router}}
   router,
-  {{/router}}
+  store,
   {{#if_eq build "runtime"}}
   render: h => h(App)
   {{/if_eq}}

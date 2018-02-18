@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <p>HELLO</p>
-    {{#router}}
     <router-view/>
-    {{/router}}
   </div>
 </template>
 
 <script>
 export default {
-  name: 'app'
+  name: 'App'
 }
 </script>
 
-<style>
+<style lang="stylus">
+body, html
+  margin 0
+  padding 0
+  height 100%
+  font-family 'monaco', 'menlo', serif, sans-serif
+  font-size 16px
+  #app
+    height 100%
 </style>
