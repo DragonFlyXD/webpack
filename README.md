@@ -1,6 +1,6 @@
 ## Intro
 
-自定义基于**Webpack**的Vue.js项目模板。
+自定义基于**Webpack**的Vue.js + typescript项目模板。
 
 ## How To Use
 
