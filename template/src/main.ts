@@ -18,8 +18,7 @@ Vue.prototype.$api = Api
 
 Vue.config.productionTip = false
 
-/* eslint-disable no-new */
-new Vue({
+const init = new Vue({
   el: '#app',
   router,
   store,

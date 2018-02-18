@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import * as c from './components'
+// import * as c from './components'
 
 Vue.use(Router)
 

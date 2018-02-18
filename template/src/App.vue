@@ -9,9 +9,7 @@ import Vue from 'vue'
 import Component from 'vue-class-component'
 
 @Component({})
-export default class App extends Vue {
-  name: 'App'
-}
+export default class App extends Vue {}
 </script>
 
 <style lang="stylus">
