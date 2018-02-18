@@ -3,7 +3,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 {{/if_eq}}
 import Vue from 'vue'
-import App from './App'
+import App from './App.vue'
 import router from './router'
 import store from './store'
 import Api from './api'
