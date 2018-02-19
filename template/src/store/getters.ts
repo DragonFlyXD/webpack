@@ -1,8 +1,8 @@
 import { GetterTree } from 'vuex'
-import state from './state';
+import state from './state'
 
 const getters: GetterTree<any, any> = {
-  isLogined(state): boolean {
+  isLogined (state): boolean {
     return state.isLogined
   }
 }

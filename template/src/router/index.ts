@@ -7,7 +7,7 @@ Vue.use(Router)
 const router: Router = new Router({
   mode: 'history',
   base: '/',
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior (to, from, savedPosition) {
     if (savedPosition) {
       return savedPosition
     } else {
