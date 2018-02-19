@@ -1,7 +1,7 @@
-import axios from 'axios'
+import axios, { AxiosInstance } from 'axios'
 import config from './config'
 
-let api = axios.create(config)
+let api: AxiosInstance = axios.create(config)
 
 // http request 拦截器
 api.interceptors.request.use(config => {

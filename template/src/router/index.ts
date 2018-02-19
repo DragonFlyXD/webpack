@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-// import * as c from './components'
+import routes from './routes'
 
 Vue.use(Router)
 
-const router = new Router({
+const router: Router = new Router({
   mode: 'history',
   base: '/',
   scrollBehavior(to, from, savedPosition) {
@@ -14,12 +14,7 @@ const router = new Router({
       return { x: 0, y: 0 }
     }
   },
-  routes: [
-    {
-      path: '/',
-      name: 'home'
-    }
-  ]
+  routes
 })
 
 // 导航钩子

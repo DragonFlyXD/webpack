@@ -12,7 +12,8 @@
     "moduleResolution": "node",
     "noImplicitAny": false,
     "experimentalDecorators": true,
-    "allowJs": true
+    "allowJs": true,
+    "strictPropertyInitialization": false
   },
   "lib": [
     "dom",

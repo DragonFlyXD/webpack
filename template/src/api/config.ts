@@ -1,5 +1,6 @@
 import QS from 'qs'
-export default {
+import { AxiosRequestConfig } from 'axios'
+const config: AxiosRequestConfig = {
   baseURL: '',
   method: 'GET',
   headers: {
@@ -19,3 +20,5 @@ export default {
   paramsSerializer: params => QS.stringify(params),
   data: {}
 }
+
+export default config
